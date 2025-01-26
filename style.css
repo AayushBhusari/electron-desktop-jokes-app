@@ -1,0 +1,84 @@
+/* General body styling */
+body {
+  background-color: #223; /* Dark theme background */
+  color: #acf; /* Light text color for contrast */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Clean and modern font */
+  margin: 0; /* Remove default margin for full-width layout */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center align all items */
+  justify-content: flex-start; /* Start content at the top */
+  height: 100vh; /* Use full viewport height */
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+/* Draggable area for the window */
+.drag {
+  cursor: move; /* Change cursor to "move" on hover */
+  height: 20px; /* Increased height for better usability */
+  width: 100%;
+  background-color: rgb(
+    55,
+    55,
+    77
+  ); /* Slightly lighter background for contrast */
+  -webkit-app-region: drag; /* Enable dragging for Electron */
+  border-radius: 5px 5px; /* Rounded corners for the top edge */
+}
+
+/* Header styling */
+h1 {
+  margin: 20px 0;
+  font-size: 1.5rem; /* Modern scaling for font size */
+  text-align: center; /* Center align the header */
+}
+
+/* Joke display area */
+#joke-div {
+  width: 100%;
+  max-width: 400px; /* Limit the width of the joke area */
+  background-color: #334; /* Slightly lighter background for the joke box */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center; /* Center align the joke text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+  margin-bottom: 20px; /* Space below the joke box */
+}
+
+/* Button container */
+.btns {
+  display: flex;
+  justify-content: space-between; /* Space out buttons */
+  width: 100%;
+  max-width: 400px; /* Match the width of the joke box */
+}
+
+/* Button styling */
+button {
+  background-color: #556;
+  color: #acf;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #778; /* Slightly lighter on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Add a press-down effect */
+}
+
+/* Close button specific styling */
+#close-btn {
+  background-color: #844; /* Slightly red tone to indicate "close" */
+}
+
+#close-btn:hover {
+  background-color: #a55; /* Brighter red on hover */
+}
